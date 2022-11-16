@@ -142,7 +142,7 @@ def weapon_get(request):
     )
     
     # [미션] 생성된 캐릭터 객체의 weapon 필드에 new_weapon 객체를 넣어주기
-    
+    character.weapon = new_weapon
     # [미션] character 객체를 저장(save)하는 코드 작성
-    
+    character.save()
     return redirect('game:adventure_home')
